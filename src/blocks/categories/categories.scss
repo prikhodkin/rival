@@ -1,0 +1,27 @@
+.categories {
+  @include list-reset;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.categories__item {
+  margin-right: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark-grey;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  transition: all 0.3s;
+
+  a {
+    &:hover,
+    &:focus {
+      color: $active-color;
+    }
+    white-space: nowrap;
+  }
+}

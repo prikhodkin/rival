@@ -19,7 +19,4 @@ gulp.task("webp", () => {
         ]))
         .pipe(gulp.dest('./src/img/'))
         .pipe(gulp.dest(paths.webp.dest))
-        .pipe(browsersync.reload({
-          stream: true
-        }))
 });

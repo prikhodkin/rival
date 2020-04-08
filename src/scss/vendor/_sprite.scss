@@ -2,27 +2,27 @@
   font-size: 10px;
 }
 
-.icon:before {
+.icon::before {
   content: " ";
-  vertical-align: middle;
   display: inline-block;
+  vertical-align: middle;
   background-image: url("../../../../docs/img/sprites/sprite.svg");
   background-repeat: no-repeat;
   background-size: 42.839999999999996em 11.6em;
 }
 
-.no-svg .icon:before {
+.no-svg .icon::before {
   background-image: url("../../../../docs/img/sprites/sprite.png");
 }
 
-.icon.pin:before {
-  background-position: 0em 0em;
+.icon.pin::before {
   width: 9.3em;
   height: 3em;
+  background-position: 0 0;
 }
 
-.icon.wallpaper_logo:before {
-  background-position: 0em -3em;
+.icon.wallpaper_logo::before {
   width: 42.839999999999996em;
   height: 8.535em;
+  background-position: 0 -3em;
 }
