@@ -1,0 +1,19 @@
+.title {
+  margin: 0;
+  font-weight: 500;
+  font-family: $title-font;
+
+  &--promo {
+    font-size: 36px;
+    color: $dark;
+    letter-spacing: 4em;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    &--promo {
+      font-size: 60px;
+    }
+  }
+}
