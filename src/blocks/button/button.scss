@@ -58,6 +58,18 @@
       }
     }
   }
+
+  &--transparent {
+    border: 1px solid #535353;
+
+    &:hover {
+      border-color: transparent;
+
+      .button__text {
+        color: #ffffff;
+      }
+    }
+  }
 }
 
 .button__text {

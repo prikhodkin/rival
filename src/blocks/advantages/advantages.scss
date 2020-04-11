@@ -1,0 +1,112 @@
+.advantages {
+  padding: 60px 15px 40px;
+}
+
+.advantages__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0;
+}
+
+.advantages__item {
+  position: relative;
+  max-width: 367px;
+  padding: 50px 40px 30px 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(66, 66, 66, 0.25);
+
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: 52px;
+    height: 52px;
+    background: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    transform: translate(-50%, -50%);
+  }
+
+  &:first-child {
+    &::before {
+      background-image: url("../../img/advantages__item--00.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &:nth-child(2) {
+    &::before {
+      background-image: url("../../img/advantages__item--01.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &:last-child {
+    &::before {
+      background-image: url("../../img/advantages__item--02.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+
+.advantages__header {
+  margin: 0;
+  margin-bottom: 7px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+}
+
+.advantages__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+  color: #505050;
+}
+
+@media (min-width: 768px) {
+  .advantages__item {
+    margin: 0 5px 50px;
+  }
+
+  .advantages__list {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages {
+    padding: 80px 0 45px;
+  }
+
+  .advantages__list {
+    margin: 0 auto;
+  }
+
+  .advantages__item {
+    margin: 0 15px 0;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
