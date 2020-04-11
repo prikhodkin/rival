@@ -13,7 +13,7 @@
 .consultation__flag {
   position: absolute;
   top: 50%;
-  left: 10px;
+  left: 20px;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -40,7 +40,15 @@
 
 .consultation__button {
   width: 100%;
+  padding-top: 24.5px;
+  padding-bottom: 24.5px;
+  font-size: 14px;
   text-align: center;
+  border-radius: 40px;
+
+  &::before {
+    border-radius: 40px;
+  }
 
   .button__text {
     margin: 0 auto;

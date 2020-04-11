@@ -32,6 +32,7 @@
   }
 
   &--main {
+    padding: 19px 50px;
     background-color: $main-color;
 
     .button__text {
@@ -42,6 +43,7 @@
   &--more {
     justify-content: center;
     width: 100%;
+    padding: 19px;
 
     .button__text {
       display: flex;
@@ -60,6 +62,7 @@
   }
 
   &--transparent {
+    padding: 19px 50px;
     border: 1px solid #535353;
 
     &:hover {
