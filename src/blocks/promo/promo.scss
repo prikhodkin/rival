@@ -92,14 +92,19 @@
     overflow-x: hidden;
   }
 
-  .promo__inner {
+  .promo__list {
     @include page-wrapper;
+    background: #f4f4f4;
+  }
+
+  .promo__inner {
     min-height: calc(100vh - 177.16px);
     padding-top: 120px;
     padding-bottom: 120px;
-    background-image: url("../../img/promo__bg--desktop.png");
-
+    background-image: url("../../img/promo__test.png");
     background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
   }
 
   .promo__title {
