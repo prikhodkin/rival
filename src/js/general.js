@@ -1,5 +1,7 @@
-import "%modules%/menu/menu";
-import "%modules%/promo/promo";
-import "%modules%/gallery/gallery"
+//= "../blocks/menu/menu.js"
+//= "../blocks/promo/promo.js"
+//= "../blocks/gallery/gallery.js"
+
+
 
 

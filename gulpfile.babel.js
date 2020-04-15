@@ -49,7 +49,8 @@ const requireDir = require("require-dir"),
             './node_modules/vh-check/dist/vh-check.js',
             './node_modules/jquery/dist/jquery.min.js',
             './node_modules/wow.js/dist/wow.js',
-            './node_modules/slick-carousel/slick/slick.min.js'],
+            './node_modules/slick-carousel/slick/slick.min.js',
+          './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js'],
           dest: "./dist/js/"
         },
         sprite: {
@@ -73,14 +74,12 @@ export { paths };
 
 gulp.task('dev',
   gulp.series('clean','sprite',
-  gulp.parallel('sass','html','scripts','images','favicons','fonts', 'webp'),
-  gulp.parallel('watch','serve')
-));
+    gulp.parallel('sass','html','scripts:lib','scripts','images','favicons','fonts', 'webp'),
+    gulp.parallel('watch','serve')
+  ));
 
 gulp.task('build',
   gulp.series('clean','sprite',
-    gulp.parallel('sass','html','scripts','images:min','favicons','fonts', 'webp'),
+    gulp.parallel('sass:min','html','scripts:min','scripts-lib:min','images:min','favicons','fonts', 'webp'),
     gulp.series('hash')
-));
-
-
+  ));

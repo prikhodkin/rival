@@ -1,5 +1,3 @@
-import $ from "jquery";
-import slick from "slick-carousel";
 $('.promo__list').slick({
   dots: true,
   adaptiveHeight: true,
