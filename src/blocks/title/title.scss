@@ -15,6 +15,12 @@
     text-align: center;
     letter-spacing: 0.05em;
   }
+
+  &--modal {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;
+  }
 }
 
 @media (min-width: 768px) {

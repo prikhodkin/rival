@@ -2,6 +2,7 @@
 //= "../blocks/promo/promo.js"
 //= "../blocks/gallery/gallery.js"
 //= "../blocks/m-reviews/m-reviews.js"
+//= "../blocks/modal/modal.js"
 
 
 
