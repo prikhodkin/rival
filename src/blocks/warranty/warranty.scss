@@ -1,0 +1,69 @@
+.warranty__item {
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 40px;
+  padding: 57px 45px 45px 28px;
+  border: 1px solid #e2e1e1;
+  border-radius: 30px;
+}
+
+.warranty__img {
+  display: block;
+  height: 214px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+
+.warranty__header {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #4194a9;
+  font-style: italic;
+  text-decoration-line: underline;
+}
+
+.warranty {
+  @include list-reset;
+  position: relative;
+  margin: 0;
+}
+
+.warranty__desc {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.warranty__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.warranty__number {
+  position: absolute;
+  top: 0;
+  left: 34px;
+  display: inline-block;
+  padding-left: 3px;
+  font-weight: 600;
+  font-size: 80px;
+  color: rgba(171, 154, 128, 0.29);
+  background-color: #ffffff;
+  transform: translateY(-50%);
+}
+
+
+@media (min-width: 768px) {
+  .warranty__item {
+    margin: 0 5px;
+    margin-top: 40px;
+  }
+}
+

@@ -1,0 +1,42 @@
+.pagination__list {
+  @include list-reset;
+  display: flex;
+  margin: 0;
+}
+
+.pagination__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  font-weight: 500;
+  font-size: 16px;
+  border: 1px solid #cbcbcb;
+  border-radius: 50%;
+  transition: all 0.3s;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #ab9a80;
+  }
+
+  &--current {
+    border-color: #ab9a80;
+  }
+}
+
+.pagination__icon {
+  width: 16.5px;
+  height: 13.75px;
+}
