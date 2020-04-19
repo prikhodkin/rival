@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Каталог | Риваль</title>
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body ontouchstart>
+<header class="header">
+  <div class="header__top">
+    <a href="index.html" class="header__logo logo">
+      <picture>
+        <source srcset="img/logo.webp" type="image/webp">
+        <img src="img/logo.png" alt="logo">
+      </picture>
+    </a>
+    <nav class="header__menu menu">
+      <button class="menu__btn ">
+        <span class="menu__hamburger">Открыть меню</span>
+      </button>
+      <div class="header__menu-wrapper">
+        <div class="header__menu-inner">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="about.html">О компании</a></li>
+            <li class="menu__item"><a href="catalog.html">Каталог</a></li>
+            <li class="menu__item"><a href="delivery.html">Доставка и оплата</a></li>
+            <li class="menu__item"><a href="warranty.html">Гарантии</a></li>
+            <li class="menu__item"><a href="legal.html">Юр. лицам</a></li>
+            <li class="menu__item"><a href="/#reviews">Отзывы</a></li>
+            <li class="menu__item"><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="header__contacts">
+            <div class="header__phone">
+              <a href="tel:+79617786661">
+                <svg class="header__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
+                </svg>
+                <span>+7 (961) 778-66-61</span>
+              </a>
+              <p>ежедневно с 9-21.00</p>
+            </div>
+            <div class="header__social">
+              <a href="#" class="header__whatsapp">
+                <svg class="header__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__whatsapp"></use>
+                </svg>
+                <span class="visually-hidden">WhatsApp</span>
+              </a>
+              <a href="mailto:mail@mail.ru" class="header__email">
+                <svg class="header__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__mail"></use>
+                </svg>
+                <span class="visually-hidden">Email</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="header__bottom">
+    <ul class="header__categories categories">
+      <li class="categories__item"><a href="">Косметологические кресла</a></li>
+      <li class="categories__item"><a href="">Педикюрные кресла</a></li>
+      <li class="categories__item"><a href="">Кресла для тату</a></li>
+      <li class="categories__item"><a href="">Доп. оборудование</a></li>
+    </ul>
+    <a href="" class="header__m-cart m-cart">
+      <div class="m-cart__left">
+        <svg class="m-cart__icon icon">
+          <use xlink:href="img/sprites/sprite.svg#icon__cart"></use>
+        </svg>
+        <span class="m-cart__count">1</span>
+      </div>
+      <div class="m-cart__right">
+        <p class="m-cart__header">Корзина</p>
+        <p class="m-cart__text">2 товара <span>31 700₽</span></p>
+      </div>
+    </a>
+  </div>
+</header>
+<main>
+  <section class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+      <li class="breadcrumbs__item">Каталог товаров</li>
+    </ul>
+  </section>
+  <section class="catalog">
+    <h1 class="catalog__title title title--page">Каталог товаров</h1>
+    <div class="catalog__wrapper">
+      <a href="" class="catalog__filter-button">Фильтры</a>
+      <div class="catalog__filter filter filter--hide">
+        <button class="filter__close">
+          <svg class="filter__icon">
+            <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+          </svg>
+        </button>
+        <div class="filter__wrapper">
+          <h3 class="filter__title">ФИЛЬТР</h3>
+          <form action="" class="filter__form">
+            <fieldset class="filter__group filter__group--first">
+              <div class="filter__row">
+                <p class="filter__header filter__header--active">Педикюрные кресла</p>
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input" checked>
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Эконом</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input">
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Комофрт</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input">
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Люкс</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="filter__row">
+                <p class="filter__header">Косметологические кресла</p>
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input" checked>
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Эконом</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input">
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Комофрт</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input">
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Люкс</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="filter__row">
+                <p class="filter__header">Кресла для тату</p>
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input" checked>
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Эконом</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input">
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Комофрт</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input">
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Люкс</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="filter__group">
+              <div class="filter__row">
+                <p class="filter__header">Цвет</p>
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input" checked>
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Зеленый</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input">
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Синий</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input">
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Бежевый</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input" disabled>
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Красный</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="filter__group">
+              <div class="filter__row">
+                <p class="filter__header filter__header--active">Тип обивки</p>
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input" checked>
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Стандрат</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input">
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Анатомический</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="filter__group">
+              <div class="filter__row">
+                <p class="filter__header filter__header--active">Тип каркаса <span>(по высоте*)</span></p>
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input" checked>
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Фиксированная высота 69 см</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input">
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Регулируемая высота 79см </span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input">
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Регулируемая высота механика</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input">
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Регулируемая высота пневматика</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input">
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Регулируемая высота электропривод</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="filter__group">
+              <div class="filter__row">
+                <p class="filter__header filter__header--active">Тип усиления каркаса </p>
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input" checked>
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Классика</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input">
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Усиленный до 150кг</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__label">
+                      <input type="checkbox" class="filter__input">
+                      <span class="filter__custom"></span>
+                      <span class="filter__name">Усиленный до 250кг</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div class="catalog__content">
+        <div class="catalog__sorting sorting">
+          <span class="sorting__text">Сортировать:</span>
+          <label class="sorting__label">
+            <select class="sorting__select">
+              <option value="По цене">По цене</option>
+              <option value="По цене">По алфавиту</option>
+            </select>
+          </label>
+          <label class="sorting__label">
+            <select class="sorting__select">
+              <option value="По цене">Новинки</option>
+              <option value="По цене">Не новинки</option>
+            </select>
+          </label>
+        </div>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <div class="catalog__flag">
+              <div class="catalog__icon-wrapper">
+                <svg class="catalog__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__mech"></use>
+                </svg>
+              </div>
+              <span class="catalog__desc">До 200 кг!</span>
+            </div>
+            <a href="" class="catalog__img">
+              <img src="img/catalog__img--00.png" alt="">
+            </a>
+            <p class="catalog__categories">ПЕДИКЮРНЫЕ КРЕСЛА</p>
+            <a href="#" class="catalog__name">Кресло педикюрное Усиленный  69 см</a>
+            <div class="catalog__controls">
+              <div class="catalog__price-wrapper">
+                <span class="catalog__label">Цена:</span>
+                <span class="catalog__price">100 200 ₽ </span>
+              </div>
+              <a href="" class="catalog__btn">
+                <span class="visually-hidden">Добавить в корзину</span>
+                <svg class="catalog__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__add-to-basket"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="catalog__info">
+              <div class="catalog__row">
+                <span class="catalog__label">Цвета:</span>
+                <ul class="catalog__color color">
+                  <li class="color__item color__item--white"><span class="visually-hidden">Белый</span></li>
+                  <li class="color__item color__item--beige"><span class="visually-hidden">Бежевый</span></li>
+                  <li class="color__item color__item--green"><span class="visually-hidden">Зеленый</span></li>
+                  <li class="color__item color__item--black"><span class="visually-hidden">Черный</span></li>
+                </ul>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Тип обивки:</span>
+                <span class="catalog__text">Стандарт</span>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Материал:</span>
+                <span class="catalog__text">Экокожа</span>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Тип каркаса:</span>
+                <span class="catalog__text">С фиксированной высотой (69см)</span>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__flag">
+              <div class="catalog__icon-wrapper">
+                <svg class="catalog__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__carcas"></use>
+                </svg>
+              </div>
+              <span class="catalog__desc">До 200 кг!</span>
+            </div>
+            <a href="" class="catalog__img">
+              <img src="img/catalog__img--01.png" alt="">
+            </a>
+            <p class="catalog__categories">ПЕДИКЮРНЫЕ КРЕСЛА</p>
+            <a href="#" class="catalog__name">Кресло педикюрное Элегия 1</a>
+            <div class="catalog__controls">
+              <div class="catalog__price-wrapper">
+                <span class="catalog__label">Цена:</span>
+                <span class="catalog__price">10 900 ₽ </span>
+              </div>
+              <a href="" class="catalog__btn">
+                <span class="visually-hidden">Добавить в корзину</span>
+                <svg class="catalog__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__add-to-basket"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="catalog__info">
+              <div class="catalog__row">
+                <span class="catalog__label">Цвета:</span>
+                <ul class="catalog__color color">
+                  <li class="color__item color__item--white"><span class="visually-hidden">Белый</span></li>
+                  <li class="color__item color__item--beige"><span class="visually-hidden">Бежевый</span></li>
+                  <li class="color__item color__item--green"><span class="visually-hidden">Зеленый</span></li>
+                  <li class="color__item color__item--black"><span class="visually-hidden">Черный</span></li>
+                </ul>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Тип обивки:</span>
+                <span class="catalog__text">Стандарт</span>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Материал:</span>
+                <span class="catalog__text">Экокожа</span>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Тип каркаса:</span>
+                <span class="catalog__text">С фиксированной высотой (69см)</span>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__flag">
+              <div class="catalog__icon-wrapper">
+                <svg class="catalog__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__power"></use>
+                </svg>
+              </div>
+              <span class="catalog__desc">До 200 кг!</span>
+            </div>
+            <a href="" class="catalog__img">
+              <img src="img/catalog__img--02.png" alt="">
+            </a>
+            <p class="catalog__categories">ПЕДИКЮРНЫЕ КРЕСЛА</p>
+            <a href="#" class="catalog__name">Кресло Гармония 1 “Пневмо” (Пневматическая регулировка)</a>
+            <div class="catalog__controls">
+              <div class="catalog__price-wrapper">
+                <span class="catalog__label">Цена:</span>
+                <span class="catalog__price">7 540 ₽ </span>
+              </div>
+              <a href="" class="catalog__btn">
+                <span class="visually-hidden">Добавить в корзину</span>
+                <svg class="catalog__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__add-to-basket"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="catalog__info">
+              <div class="catalog__row">
+                <span class="catalog__label">Цвета:</span>
+                <ul class="catalog__color color">
+                  <li class="color__item color__item--white"><span class="visually-hidden">Белый</span></li>
+                  <li class="color__item color__item--beige"><span class="visually-hidden">Бежевый</span></li>
+                  <li class="color__item color__item--green"><span class="visually-hidden">Зеленый</span></li>
+                  <li class="color__item color__item--black"><span class="visually-hidden">Черный</span></li>
+                </ul>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Тип обивки:</span>
+                <span class="catalog__text">Стандарт</span>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Материал:</span>
+                <span class="catalog__text">Экокожа</span>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Тип каркаса:</span>
+                <span class="catalog__text">С фиксированной высотой (69см)</span>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__flag">
+              <div class="catalog__icon-wrapper">
+                <svg class="catalog__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__pnevmo"></use>
+                </svg>
+              </div>
+              <span class="catalog__desc">До 200 кг!</span>
+            </div>
+            <a href="" class="catalog__img">
+              <img src="img/catalog__img--03.png" alt="">
+            </a>
+            <p class="catalog__categories">ПЕДИКЮРНЫЕ КРЕСЛА</p>
+            <a href="#" class="catalog__name">Кресло КАРКАС Усиленный (69см) </a>
+            <div class="catalog__controls">
+              <div class="catalog__price-wrapper">
+                <span class="catalog__label">Цена:</span>
+                <span class="catalog__price">21 930 ₽ </span>
+              </div>
+              <a href="" class="catalog__btn">
+                <span class="visually-hidden">Добавить в корзину</span>
+                <svg class="catalog__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__add-to-basket"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="catalog__info">
+              <div class="catalog__row">
+                <span class="catalog__label">Цвета:</span>
+                <ul class="catalog__color color">
+                  <li class="color__item color__item--white"><span class="visually-hidden">Белый</span></li>
+                  <li class="color__item color__item--beige"><span class="visually-hidden">Бежевый</span></li>
+                  <li class="color__item color__item--green"><span class="visually-hidden">Зеленый</span></li>
+                  <li class="color__item color__item--black"><span class="visually-hidden">Черный</span></li>
+                </ul>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Тип обивки:</span>
+                <span class="catalog__text">Стандарт</span>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Материал:</span>
+                <span class="catalog__text">Экокожа</span>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Тип каркаса:</span>
+                <span class="catalog__text">С фиксированной высотой (69см)</span>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__flag">
+              <div class="catalog__icon-wrapper">
+                <svg class="catalog__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__mech"></use>
+                </svg>
+              </div>
+              <span class="catalog__desc">До 200 кг!</span>
+            </div>
+            <a href="" class="catalog__img">
+              <img src="img/catalog__img--00.png" alt="">
+            </a>
+            <p class="catalog__categories">ПЕДИКЮРНЫЕ КРЕСЛА</p>
+            <a href="#" class="catalog__name">Кресло КАРКАС Усиленный (69см) </a>
+            <div class="catalog__controls">
+              <div class="catalog__price-wrapper">
+                <span class="catalog__label">Цена:</span>
+                <span class="catalog__price">1 000 ₽ </span>
+              </div>
+              <a href="" class="catalog__btn">
+                <span class="visually-hidden">Добавить в корзину</span>
+                <svg class="catalog__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__add-to-basket"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="catalog__info">
+              <div class="catalog__row">
+                <span class="catalog__label">Цвета:</span>
+                <ul class="catalog__color color">
+                  <li class="color__item color__item--white"><span class="visually-hidden">Белый</span></li>
+                  <li class="color__item color__item--beige"><span class="visually-hidden">Бежевый</span></li>
+                  <li class="color__item color__item--green"><span class="visually-hidden">Зеленый</span></li>
+                  <li class="color__item color__item--black"><span class="visually-hidden">Черный</span></li>
+                </ul>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Тип обивки:</span>
+                <span class="catalog__text">Стандарт</span>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Материал:</span>
+                <span class="catalog__text">Экокожа</span>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Тип каркаса:</span>
+                <span class="catalog__text">С фиксированной высотой (69см)</span>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__flag">
+              <div class="catalog__icon-wrapper">
+                <svg class="catalog__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__carcas"></use>
+                </svg>
+              </div>
+              <span class="catalog__desc">До 200 кг!</span>
+            </div>
+            <a href="" class="catalog__img">
+              <img src="img/catalog__img--01.png" alt="">
+            </a>
+            <p class="catalog__categories">ПЕДИКЮРНЫЕ КРЕСЛА</p>
+            <a href="#" class="catalog__name">Кресло КАРКАС Усиленный (69см) </a>
+            <div class="catalog__controls">
+              <div class="catalog__price-wrapper">
+                <span class="catalog__label">Цена:</span>
+                <span class="catalog__price">873 ₽ </span>
+              </div>
+              <a href="" class="catalog__btn">
+                <span class="visually-hidden">Добавить в корзину</span>
+                <svg class="catalog__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__add-to-basket"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="catalog__info">
+              <div class="catalog__row">
+                <span class="catalog__label">Цвета:</span>
+                <ul class="catalog__color color">
+                  <li class="color__item color__item--white"><span class="visually-hidden">Белый</span></li>
+                  <li class="color__item color__item--beige"><span class="visually-hidden">Бежевый</span></li>
+                  <li class="color__item color__item--green"><span class="visually-hidden">Зеленый</span></li>
+                  <li class="color__item color__item--black"><span class="visually-hidden">Черный</span></li>
+                </ul>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Тип обивки:</span>
+                <span class="catalog__text">Стандарт</span>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Материал:</span>
+                <span class="catalog__text">Экокожа</span>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Тип каркаса:</span>
+                <span class="catalog__text">С фиксированной высотой (69см)</span>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__flag">
+              <div class="catalog__icon-wrapper">
+                <svg class="catalog__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__mech"></use>
+                </svg>
+              </div>
+              <span class="catalog__desc">До 200 кг!</span>
+            </div>
+            <a href="" class="catalog__img">
+              <img src="img/catalog__img--00.png" alt="">
+            </a>
+            <p class="catalog__categories">ПЕДИКЮРНЫЕ КРЕСЛА</p>
+            <a href="#" class="catalog__name">Кресло педикюрное Усиленный  69 см</a>
+            <div class="catalog__controls">
+              <div class="catalog__price-wrapper">
+                <span class="catalog__label">Цена:</span>
+                <span class="catalog__price">100 200 ₽ </span>
+              </div>
+              <a href="" class="catalog__btn">
+                <span class="visually-hidden">Добавить в корзину</span>
+                <svg class="catalog__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__add-to-basket"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="catalog__info">
+              <div class="catalog__row">
+                <span class="catalog__label">Цвета:</span>
+                <ul class="catalog__color color">
+                  <li class="color__item color__item--white"><span class="visually-hidden">Белый</span></li>
+                  <li class="color__item color__item--beige"><span class="visually-hidden">Бежевый</span></li>
+                  <li class="color__item color__item--green"><span class="visually-hidden">Зеленый</span></li>
+                  <li class="color__item color__item--black"><span class="visually-hidden">Черный</span></li>
+                </ul>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Тип обивки:</span>
+                <span class="catalog__text">Стандарт</span>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Материал:</span>
+                <span class="catalog__text">Экокожа</span>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Тип каркаса:</span>
+                <span class="catalog__text">С фиксированной высотой (69см)</span>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__flag">
+              <div class="catalog__icon-wrapper">
+                <svg class="catalog__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__carcas"></use>
+                </svg>
+              </div>
+              <span class="catalog__desc">До 200 кг!</span>
+            </div>
+            <a href="" class="catalog__img">
+              <img src="img/catalog__img--01.png" alt="">
+            </a>
+            <p class="catalog__categories">ПЕДИКЮРНЫЕ КРЕСЛА</p>
+            <a href="#" class="catalog__name">Кресло педикюрное Элегия 1</a>
+            <div class="catalog__controls">
+              <div class="catalog__price-wrapper">
+                <span class="catalog__label">Цена:</span>
+                <span class="catalog__price">10 900 ₽ </span>
+              </div>
+              <a href="" class="catalog__btn">
+                <span class="visually-hidden">Добавить в корзину</span>
+                <svg class="catalog__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__add-to-basket"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="catalog__info">
+              <div class="catalog__row">
+                <span class="catalog__label">Цвета:</span>
+                <ul class="catalog__color color">
+                  <li class="color__item color__item--white"><span class="visually-hidden">Белый</span></li>
+                  <li class="color__item color__item--beige"><span class="visually-hidden">Бежевый</span></li>
+                  <li class="color__item color__item--green"><span class="visually-hidden">Зеленый</span></li>
+                  <li class="color__item color__item--black"><span class="visually-hidden">Черный</span></li>
+                </ul>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Тип обивки:</span>
+                <span class="catalog__text">Стандарт</span>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Материал:</span>
+                <span class="catalog__text">Экокожа</span>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Тип каркаса:</span>
+                <span class="catalog__text">С фиксированной высотой (69см)</span>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__flag">
+              <div class="catalog__icon-wrapper">
+                <svg class="catalog__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__power"></use>
+                </svg>
+              </div>
+              <span class="catalog__desc">До 200 кг!</span>
+            </div>
+            <a href="" class="catalog__img">
+              <img src="img/catalog__img--02.png" alt="">
+            </a>
+            <p class="catalog__categories">ПЕДИКЮРНЫЕ КРЕСЛА</p>
+            <a href="#" class="catalog__name">Кресло Гармония 1 “Пневмо” (Пневматическая регулировка)</a>
+            <div class="catalog__controls">
+              <div class="catalog__price-wrapper">
+                <span class="catalog__label">Цена:</span>
+                <span class="catalog__price">7 540 ₽ </span>
+              </div>
+              <a href="" class="catalog__btn">
+                <span class="visually-hidden">Добавить в корзину</span>
+                <svg class="catalog__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__add-to-basket"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="catalog__info">
+              <div class="catalog__row">
+                <span class="catalog__label">Цвета:</span>
+                <ul class="catalog__color color">
+                  <li class="color__item color__item--white"><span class="visually-hidden">Белый</span></li>
+                  <li class="color__item color__item--beige"><span class="visually-hidden">Бежевый</span></li>
+                  <li class="color__item color__item--green"><span class="visually-hidden">Зеленый</span></li>
+                  <li class="color__item color__item--black"><span class="visually-hidden">Черный</span></li>
+                </ul>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Тип обивки:</span>
+                <span class="catalog__text">Стандарт</span>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Материал:</span>
+                <span class="catalog__text">Экокожа</span>
+              </div>
+              <div class="catalog__row">
+                <span class="catalog__label">Тип каркаса:</span>
+                <span class="catalog__text">С фиксированной высотой (69см)</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <section class="catalog__pagination pagination">
+          <ul class="pagination__list">
+            <li class="pagination__item"><a href="">1</a></li>
+            <li class="pagination__item"><a href="">2</a></li>
+            <li class="pagination__item">...</li>
+            <li class="pagination__item"><a href="">9</a></li>
+            <li class="pagination__item">
+              <a href="">
+                <svg class="pagination__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__pagination-arrow"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__contact">
+      <p class="footer__hot-line">Горячая линия:</p>
+      <a href="tel:89122221748" class="footer__phone">8 912 222 1748</a>
+      <a href="mailto:info@salon.ru" class="footer__email">info@salon.ru</a>
+      <p class="footer__header">Мы в соцсетях:</p>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a href="">
+            <svg class="social__icon social__icon--vk">
+              <use xlink:href="img/sprites/sprite.svg#icon__inst"></use>
+            </svg>
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="">
+            <svg class="social__icon">
+              <use xlink:href="img/sprites/sprite.svg#icon__yt"></use>
+            </svg>
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="">
+            <svg class="social__icon">
+              <use xlink:href="img/sprites/sprite.svg#icon__vk"></use>
+            </svg>
+            <span class="visually-hidden">Vk</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a href="catalog.html" class="footer__header">Каталог</a>
+        <ul class="footer__sub-list">
+          <li class="footer__sub-item"><a href="">Маникюрные кресла</a></li>
+          <li class="footer__sub-item"><a href="">Педикюрные кресла</a></li>
+          <li class="footer__sub-item"><a href="">Кресла для тату</a></li>
+          <li class="footer__sub-item"><a href="">Дополнительное оборудование</a></li>
+        </ul>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__header">Помощь</a>
+        <ul class="footer__sub-list">
+          <li class="footer__sub-item"><a href="delivery.html">Доставка и оплата</a></li>
+          <li class="footer__sub-item"><a href="legal.html">Юридическим лицам</a></li>
+          <li class="footer__sub-item"><a href="warranty.html">Гарантии</a></li>
+        </ul>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__header">О нас</a>
+        <ul class="footer__sub-list">
+          <li class="footer__sub-item"><a href="about.html">О компании</a></li>
+          <li class="footer__sub-item"><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copyright">© The Rival, 2019 - 2020</p>
+    <a href="" class="footer__politic">Политика конфиденциальности</a>
+    <p class="footer__development">Создание сайта - <a href="">ARS CREATIVE</a></p>
+  </div>
+</footer>
+<div class="overlay"></div>
+<div class="modal modal--item catalog__modal">
+  <button class="modal__close">
+    <svg class="modal__icon">
+      <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+    </svg>
+  </button>
+  <h2 class="modal__title title">Товар добавлен в корзину</h2>
+  <div class="modal__top">
+    <div class="modal__img">
+      <img src="img/catalog__img--00.png" alt="f">
+    </div>
+    <div class="modal__content">
+      <div class="modal__col">
+        <p class="modal__label">Название</p>
+        <a href="" class="modal__name">Кресло педикюрное </a>
+        <p class="modal__article">Артикул 34585701</p>
+      </div>
+      <div class="modal__col">
+        <p class="modal__label">Цена</p>
+        <p class="modal__price">11 700 ₽</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal__bottom">
+    <a href="" class="button button--grey modal__button modal__button--close">
+      <span class="button__text">Продолжить покупки</span>
+    </a>
+    <a href="" class="button button--main modal__button">
+      <span class="button__text">Оформить заказ</span>
+    </a>
+  </div>
+</div>
+<script src="js/libs.js"></script>
+<script src="js/general.js"></script>
+</body>
+</html>
