@@ -96,14 +96,14 @@
         <h2 class="cart__sub-title">Оформление заказа</h2>
         <div class="cart__step">
           <p class="cart__header"><span>1</span>Способ доставки</p>
-          <div class="cart__hide">
+          <div class="cart__hide ">
             <div class="cart__row">
               <p class="cart__caption">Населенный пункт *</p>
               <input type="text" class="cart__input" placeholder="г. Екатеринбург">
             </div>
             <div class="cart__row">
               <p class="cart__caption">Способ доставки *</p>
-              <div class="cart__flex">
+              <div class="cart__flex cart__flex--delivery">
                 <label class="cart__label">
                   <input name="one" type="radio" class="cart__radio" checked>
                   <span class="cart__custom"></span>
@@ -113,7 +113,7 @@
                   </div>
                 </label>
                 <label class="cart__label">
-                  <input name="one" type="radio" class="cart__radio">
+                  <input name="one"  type="radio" class="cart__radio cart__radio--tk">
                   <span class="cart__custom"></span>
                   <div class="cart__label-content">
                     <p>Доставка транспортной компанией</p>
@@ -121,9 +121,16 @@
                   </div>
                 </label>
               </div>
-
             </div>
-            <div class="cart__row">
+            <div class="cart__row cart__row--city">
+              <p class="cart__caption">Адрес доставки</p>
+              <div class="cart__flex">
+                <input type="text" class="cart__input" placeholder="Улица*">
+                <input type="text" class="cart__input" placeholder="Дом*">
+                <input type="text" class="cart__input" placeholder="Квартира*">
+              </div>
+            </div>
+            <div class="cart__row cart__row--tk">
               <p class="cart__caption">Адрес доставки</p>
               <input type="text" class="cart__input" placeholder="Город *">
               <div class="cart__flex">
@@ -132,16 +139,16 @@
                 <input type="text" class="cart__input" placeholder="Квартира*">
               </div>
             </div>
+            <a href="#payment" class="cart__next cart__next--delivery button button--main"><span class="button__text">ПРОДОЛЖИТЬ</span></a>
           </div>
-          <button class="cart__next button button--main"><span class="button__text">ПРОДОЛЖИТЬ</span></button>
         </div>
-        <div class="cart__step">
+        <div class="cart__step" id="payment">
           <p class="cart__header"><span>2</span>Оплата</p>
-          <div class="cart__hide">
+          <div class="cart__hide cart__hide--payment hide">
             <div class="cart__row">
-              <div class="cart__flex">
+              <div class="cart__flex cart__flex--payment">
                 <label class="cart__label">
-                  <input name="two" type="radio" class="cart__radio" >
+                  <input name="two" type="radio" class="cart__radio" checked>
                   <span class="cart__custom"></span>
                   <div class="cart__label-content">
                     <p>Наложенный платеж</p>
@@ -149,7 +156,7 @@
                   </div>
                 </label>
                 <label class="cart__label">
-                  <input name="two" type="radio" class="cart__radio" checked>
+                  <input name="two" type="radio" class="cart__radio cart__radio--payment">
                   <span class="cart__custom"></span>
                   <div class="cart__label-content">
                     <p>Запросить счет на юр.лицо</p>
@@ -158,18 +165,18 @@
                 </label>
               </div>
             </div>
-            <div class="cart__row">
+            <div class="cart__row cart__row--payment">
               <p class="cart__caption">Название организации</p>
               <input type="text" class="cart__input" placeholder="Название организации">
               <p class="cart__caption">ИНН организации</p>
               <input type="text" class="cart__input" placeholder="Введите ИНН">
             </div>
+            <a href="#contact" class="cart__next  cart__next--payment button button--main"><span class="button__text">ПРОДОЛЖИТЬ</span></a>
           </div>
-          <button class="cart__next button button--main"><span class="button__text">ПРОДОЛЖИТЬ</span></button>
         </div>
-        <div class="cart__step">
+        <div class="cart__step" id="contact">
           <p class="cart__header"><span>3</span>Контакты</p>
-          <div class="cart__hide">
+          <div class="cart__hide cart__hide--contact hide">
             <div class="cart__row">
               <p class="cart__caption">Укажите свои данные</p>
               <input type="text" class="cart__input" placeholder="ФИО заказчика">
@@ -179,16 +186,16 @@
               </div>
               <textarea name="" id="" cols="30" rows="10" class="cart__textarea" placeholder="Комментарий к заказу"></textarea>
             </div>
+            <a href="#send" class="cart__next  cart__next--contact button button--main"><span class="button__text">ПРОДОЛЖИТЬ</span></a>
           </div>
-          <button class="cart__next button button--main"><span class="button__text">ПРОДОЛЖИТЬ</span></button>
         </div>
       </div>
-      <div class="cart__right">
+      <div class="cart__right" id="send">
         <p class="cart__bottom">2 товара в корзине</p>
         <ul class="cart__steps">
-          <li class="active">Способ доставки</li>
-          <li>Оплата</li>
-          <li>Контакты</li>
+          <li class="delivery">Способ доставки</li>
+          <li class="payment">Оплата</li>
+          <li class="contact">Контакты</li>
         </ul>
         <div class="cart__flex">
           <p class="cart__name">Всего к оплате</p>

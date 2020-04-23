@@ -181,6 +181,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -213,6 +214,8 @@
     transition: all 0.5s;
 
     .catalog__row {
+      text-align: left;
+
       &:not(:last-child) {
         margin-bottom: 18px;
       }

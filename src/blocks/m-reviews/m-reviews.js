@@ -22,3 +22,5 @@ $('.m-reviews__count--small').html($(".m-reviews__list").slick("getSlick").slide
 $(".m-reviews__list").on("afterChange", function(event, slick, currentSlide, nextSlide){
   $(".m-reviews__count--current").html(currentSlide + 1);
 });
+
+$('.m-reviews__img-list').slick();

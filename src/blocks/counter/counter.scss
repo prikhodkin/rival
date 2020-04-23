@@ -1,0 +1,39 @@
+.counter__button {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 45px;
+  padding: 0;
+  font-size: 0;
+  background-color: #f0f0f0;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+
+  &--min {
+    background-image: url("../../img/min-counter.svg");
+    background-position-x: 15px;
+    border-radius: 30px 0 0 30px;
+  }
+
+  &--max {
+    background-image: url("../../img/max-counter.svg");
+    background-position-x: 3px;
+    border-radius: 0 30px 30px 0;
+  }
+}
+
+.counter {
+  display: flex;
+}
+
+.counter__input {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  background-color: #f0f0f0;
+  border: none;
+  appearance: none;
+}
