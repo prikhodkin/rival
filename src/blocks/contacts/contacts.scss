@@ -1,0 +1,34 @@
+.contacts {
+  padding: 0 15px;
+  padding-bottom: 40px;
+}
+
+.contacts__name {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.contacts__text {
+  margin: 0;
+  margin-bottom: 11px;
+  font-size: 14px;
+  line-height: 1.5em;
+  transition: all 0.3s;
+
+  a {
+    text-transform: uppercase;
+
+    &:hover {
+      color: $active-color;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts {
+    @include page-wrapper;
+    padding-bottom: 100px;
+  }
+}

@@ -1,0 +1,33 @@
+.simple {
+  padding-bottom: 60px;
+}
+
+.simple__header {
+  font-size: 30px;
+}
+
+.simple__wrapper {
+  padding: 0 15px;
+}
+
+.simple__text {
+  max-width: 870px;
+  margin: 40px 0;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.simple__img {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .simple__wrapper {
+    @include page-wrapper;
+  }
+
+  .simple__img {
+    display: inline-block;
+    padding-right: calc(50% - 585px);
+  }
+}

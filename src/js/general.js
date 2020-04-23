@@ -1,2 +1,9 @@
-
-
+//= "../blocks/menu/menu.js"
+//= "../blocks/promo/promo.js"
+//= "../blocks/gallery/gallery.js"
+//= "../blocks/m-reviews/m-reviews.js"
+//= "../blocks/modal/modal.js"
+//= "../blocks/filter/filter.js"
+//= "../blocks/warranty/warranty.js"
+//= "../blocks/item/item.js"
+//= "../blocks/cart/cart.js"

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Контакты | Риваль</title>
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body ontouchstart>
+//= "../blocks/header/header.html"
+<main>
+  <section class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+      <li class="breadcrumbs__item">Ваша корзина</li>
+    </ul>
+  </section>
+  <section class="cart">
+    <h1 class="cart__title title title--page">Ваша корзина</h1>
+    <div class="cart__inner">
+      <div class="cart__left">
+        <div class="cart__list-wrapper">
+          <ul class="cart__list">
+            <li class="cart__item">
+              <button class="cart__del">
+                <svg class="cart__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__del"></use>
+                </svg>
+              </button>
+              <img src="../img/catalog__img--00.png" alt="" class="cart__img">
+              <div class="cart__body">
+                <a href="" class="cart__name">Кресло педикюрное Классика</a>
+                <ul class="cart__sub-list">
+                  <li class="cart__sub-item">
+                    Тип обивки: <span>Стандарт</span>
+                  </li>
+                  <li class="cart__sub-item">
+                    Каркас: <span>с фиксированной высотой</span>
+                  </li>
+                  <li class="cart__sub-item">
+                    Цвет:
+                    <span>
+                    <div class="color__item color__item--beige"><span class="visually-hidden">Бежевый</span></div>
+                    Бежевый
+                  </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="cart__controls">
+                <button class="cart__button cart__button--min">-</button>
+                <input type="text" class="cart__number" value="2">
+                <button class="cart__button cart__button--max">+</button>
+              </div>
+              <p class="cart__item-price">11 700 ₽</p>
+            </li>
+            <li class="cart__item">
+              <button class="cart__del">
+                <svg class="cart__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__del"></use>
+                </svg>
+              </button>
+              <img src="../img/catalog__img--00.png" alt="" class="cart__img">
+              <div class="cart__body">
+                <a href="" class="cart__name">Кресло педикюрное Классика</a>
+                <ul class="cart__sub-list">
+                  <li class="cart__sub-item">
+                    Тип обивки: <span>Стандарт</span>
+                  </li>
+                  <li class="cart__sub-item">
+                    Каркас: <span>с фиксированной высотой</span>
+                  </li>
+                  <li class="cart__sub-item">
+                    Цвет:
+                    <span>
+                    <div class="color__item color__item--beige"><span class="visually-hidden">Бежевый</span></div>
+                    Бежевый
+                  </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="cart__controls">
+                <button class="cart__button cart__button--min">-</button>
+                <input type="text" class="cart__number" value="2">
+                <button class="cart__button cart__button--max">+</button>
+              </div>
+              <p class="cart__item-price">11 700 ₽</p>
+            </li>
+          </ul>
+          <div class="cart__result">
+            <p class="cart__result-count">4 товара на сумму</p>
+            <p class="cart__result-sum">31 700 ₽</p>
+          </div>
+        </div>
+        <h2 class="cart__sub-title">Оформление заказа</h2>
+        <div class="cart__step">
+          <p class="cart__header"><span>1</span>Способ доставки</p>
+          <div class="cart__hide ">
+            <div class="cart__row">
+              <p class="cart__caption">Населенный пункт *</p>
+              <input type="text" class="cart__input" placeholder="г. Екатеринбург">
+            </div>
+            <div class="cart__row">
+              <p class="cart__caption">Способ доставки *</p>
+              <div class="cart__flex cart__flex--delivery">
+                <label class="cart__label">
+                  <input name="one" type="radio" class="cart__radio" checked>
+                  <span class="cart__custom"></span>
+                  <div class="cart__label-content">
+                    <p>Доставка по Екатеринбургу до двери - 350р</p>
+                    <span>Зарезирвируем товар, который хранится на складе</span>
+                  </div>
+                </label>
+                <label class="cart__label">
+                  <input name="one"  type="radio" class="cart__radio cart__radio--tk">
+                  <span class="cart__custom"></span>
+                  <div class="cart__label-content">
+                    <p>Доставка транспортной компанией</p>
+                    <span>Доставим товар Транспортной компанией</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="cart__row cart__row--city">
+              <p class="cart__caption">Адрес доставки</p>
+              <div class="cart__flex">
+                <input type="text" class="cart__input" placeholder="Улица*">
+                <input type="text" class="cart__input" placeholder="Дом*">
+                <input type="text" class="cart__input" placeholder="Квартира*">
+              </div>
+            </div>
+            <div class="cart__row cart__row--tk">
+              <p class="cart__caption">Адрес доставки</p>
+              <input type="text" class="cart__input" placeholder="Город *">
+              <div class="cart__flex">
+                <input type="text" class="cart__input" placeholder="Улица*">
+                <input type="text" class="cart__input" placeholder="Дом*">
+                <input type="text" class="cart__input" placeholder="Квартира*">
+              </div>
+            </div>
+            <a href="#payment" class="cart__next cart__next--delivery button button--main"><span class="button__text">ПРОДОЛЖИТЬ</span></a>
+          </div>
+        </div>
+        <div class="cart__step" id="payment">
+          <p class="cart__header"><span>2</span>Оплата</p>
+          <div class="cart__hide cart__hide--payment hide">
+            <div class="cart__row">
+              <div class="cart__flex cart__flex--payment">
+                <label class="cart__label">
+                  <input name="two" type="radio" class="cart__radio" checked>
+                  <span class="cart__custom"></span>
+                  <div class="cart__label-content">
+                    <p>Наложенный платеж</p>
+                    <span>доставки или во время самовывоза</span>
+                  </div>
+                </label>
+                <label class="cart__label">
+                  <input name="two" type="radio" class="cart__radio cart__radio--payment">
+                  <span class="cart__custom"></span>
+                  <div class="cart__label-content">
+                    <p>Запросить счет на юр.лицо</p>
+                    <span>Заполните данные для выставления счета</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="cart__row cart__row--payment">
+              <p class="cart__caption">Название организации</p>
+              <input type="text" class="cart__input" placeholder="Название организации">
+              <p class="cart__caption">ИНН организации</p>
+              <input type="text" class="cart__input" placeholder="Введите ИНН">
+            </div>
+            <a href="#contact" class="cart__next  cart__next--payment button button--main"><span class="button__text">ПРОДОЛЖИТЬ</span></a>
+          </div>
+        </div>
+        <div class="cart__step" id="contact">
+          <p class="cart__header"><span>3</span>Контакты</p>
+          <div class="cart__hide cart__hide--contact hide">
+            <div class="cart__row">
+              <p class="cart__caption">Укажите свои данные</p>
+              <input type="text" class="cart__input" placeholder="ФИО заказчика">
+              <div class="cart__flex">
+                <input type="text" class="cart__input" placeholder="Телефон">
+                <input type="text" class="cart__input" placeholder="Email">
+              </div>
+              <textarea name="" id="" cols="30" rows="10" class="cart__textarea" placeholder="Комментарий к заказу"></textarea>
+            </div>
+            <a href="#send" class="cart__next  cart__next--contact button button--main"><span class="button__text">ПРОДОЛЖИТЬ</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="cart__right" id="send">
+        <p class="cart__bottom">2 товара в корзине</p>
+        <ul class="cart__steps">
+          <li class="delivery">Способ доставки</li>
+          <li class="payment">Оплата</li>
+          <li class="contact">Контакты</li>
+        </ul>
+        <div class="cart__flex">
+          <p class="cart__name">Всего к оплате</p>
+          <span class="cart__result-sum">31 700 ₽</span>
+        </div>
+        <button class="cart__send button button--main"><span class="button__text">ОФОРМИТЬ ЗАКАЗ</span></button>
+
+      </div>
+    </div>
+  </section>
+</main>
+//= "../blocks/footer/footer.html"
+<script src="js/libs.js"></script>
+<script src="js/general.js"></script>
+</body>
+</html>
