@@ -43,6 +43,7 @@ $('.m-reviews__count--small').html($(".m-reviews__list").slick("getSlick").slide
 $(".m-reviews__list").on("afterChange", function (event, slick, currentSlide, nextSlide) {
   $(".m-reviews__count--current").html(currentSlide + 1);
 });
+$('.m-reviews__img-list').slick();
 $('.catalog__btn').on('click', function (evt) {
   evt.preventDefault();
   $('.overlay').fadeIn();
@@ -110,14 +111,63 @@ $('.warranty').slick({
     }
   }]
 });
-$(function () {
-  $("a[href^='#']").click(function () {
-    var _href = $(this).attr("href");
-
-    $("html, body").animate({
-      scrollTop: $(_href).offset().top + "px"
-    });
-    return false;
-  });
+$('.item__gallery-list').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: '.item__arrow--left',
+  nextArrow: '.item__arrow--right',
+  fade: true,
+  // asNavFor: '.item__gallery-sublist',
+  infinite: true
+});
+$('.item__gallery-sublist').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.item__gallery-list',
+  infinite: true,
+  dots: false,
+  vertical: true,
+  focusOnSelect: true,
+  responsive: [{
+    breakpoint: 1199,
+    settings: {
+      vertical: false
+    }
+  }]
+});
+$('#responsiveTabsDemo').responsiveTabs({
+  startCollapsed: 'accordion'
+});
+$('.item__show').click(function (evt) {
+  evt.preventDefault();
+  $('.item__show').toggleClass('item__show--active');
+  $('.item__hide-content').slideToggle();
+});
+$('.cart__next--delivery').click(function () {
+  $('.delivery').addClass('active');
+  $('.cart__hide--payment').fadeToggle();
+});
+$('.cart__next--payment').click(function () {
+  $('.payment').addClass('active');
+  $('.cart__hide--contact').fadeToggle();
+});
+$('.cart__next--contact').click(function () {
+  $('.contact').addClass('active');
+});
+$('.cart__flex--delivery').click(function () {
+  if ($('.cart__radio--tk:checked').length !== 0) {
+    $('.cart__row--city').css('display', 'none');
+    $('.cart__row--tk').fadeIn();
+  } else {
+    $('.cart__row--tk').css('display', 'none');
+    $('.cart__row--city').fadeIn();
+  }
+});
+$('.cart__flex--payment').click(function () {
+  if ($('.cart__radio--payment:checked').length !== 0) {
+    $('.cart__row--payment').fadeIn();
+  } else {
+    $('.cart__row--payment').fadeOut();
+  }
 });
 //# sourceMappingURL=maps/general.js.map
