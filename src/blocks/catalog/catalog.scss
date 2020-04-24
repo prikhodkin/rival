@@ -1,5 +1,15 @@
 .catalog {
   padding: 0 15px;
+  padding-bottom: 40px;
+}
+
+.catalog__more {
+  &.m-catalog__button {
+    left: unset;
+    margin-right: auto;
+    margin-left: auto;
+    transform: translateX(0);
+  }
 }
 
 .catalog__title {
