@@ -29,3 +29,9 @@ $('.cart__flex--payment').click(()=> {
     $('.cart__row--payment').fadeOut();
   }
 })
+
+$('.cart__send').click((evt)=> {
+  evt.preventDefault();
+  $('.overlay').fadeIn();
+  $('.modal--thx').fadeIn();
+})

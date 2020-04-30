@@ -131,12 +131,32 @@
               </div>
             </div>
             <div class="cart__row cart__row--tk">
-              <p class="cart__caption">Адрес доставки</p>
-              <input type="text" class="cart__input" placeholder="Город *">
-              <div class="cart__flex">
-                <input type="text" class="cart__input" placeholder="Улица*">
-                <input type="text" class="cart__input" placeholder="Дом*">
-                <input type="text" class="cart__input" placeholder="Квартира*">
+              <div class="cart__row">
+                <p class="cart__caption">Предпочитачитаемая ТК*</p>
+                <div class="cart__select">
+                  <select class="cart__input cart__input--select">
+                    <option value="1">Выберите ТК</option>
+                    <option value="1">ТК</option>
+                  </select>
+                </div>
+              </div>
+              <div class="cart__row">
+                <p class="cart__caption">Забрать в пункте выдачи ТК*</p>
+                <div class="cart__select">
+                  <select class="cart__input">
+                    <option value="1">Выберите пункт выдачи ТК</option>
+                    <option value="1">ТК</option>
+                  </select>
+                </div>
+              </div>
+              <div class="cart__row">
+                <p class="cart__caption">Адрес доставки</p>
+                <input type="text" class="cart__input" placeholder="Город *">
+                <div class="cart__flex">
+                  <input type="text" class="cart__input" placeholder="Улица*">
+                  <input type="text" class="cart__input" placeholder="Дом*">
+                  <input type="text" class="cart__input" placeholder="Квартира*">
+                </div>
               </div>
             </div>
             <a href="#payment" class="cart__next cart__next--delivery button button--main"><span class="button__text">ПРОДОЛЖИТЬ</span></a>
@@ -208,6 +228,7 @@
   </section>
 </main>
 //= "../blocks/footer/footer.html"
+//= "../blocks/modal/modal.html"
 <script src="js/libs.js"></script>
 <script src="js/general.js"></script>
 </body>
