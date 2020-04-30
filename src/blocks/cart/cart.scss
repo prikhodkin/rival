@@ -204,9 +204,28 @@
   padding: 15px;
   font-size: 14px;
   line-height: 28px;
+  background: transparent;
   //color: #767676;
   border: 1px solid #d5d5d5;
   border-radius: 5px;
+  appearance: none;
+}
+
+.cart__select {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 19px;
+    z-index: 20;
+    display: block;
+    width: 13px;
+    height: 13px;
+    background-image: url("../../img/select-down.svg");
+    transform: translateY(-50%);
+  }
 }
 
 .cart__caption {
@@ -246,7 +265,7 @@
 .cart__label-content {
   p {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-weight: 500;
     font-size: 16px;
     line-height: 23px;

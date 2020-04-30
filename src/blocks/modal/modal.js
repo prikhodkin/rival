@@ -11,11 +11,13 @@ $('.catalog__btn').on('click', (evt) => {
 
 $('.overlay').on('click', () => {
   $('.modal--item').fadeOut();
+  $('.modal--thx').fadeOut();
   $('.overlay').fadeOut();
 })
 
 $('.modal__close').on('click', () => {
   $('.modal--item').fadeOut();
+  $('.modal--thx').fadeOut();
   $('.overlay').fadeOut();
 })
 
