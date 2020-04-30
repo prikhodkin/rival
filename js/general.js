@@ -56,10 +56,12 @@ $('.catalog__btn').on('click', function (evt) {
 });
 $('.overlay').on('click', function () {
   $('.modal--item').fadeOut();
+  $('.modal--thx').fadeOut();
   $('.overlay').fadeOut();
 });
 $('.modal__close').on('click', function () {
   $('.modal--item').fadeOut();
+  $('.modal--thx').fadeOut();
   $('.overlay').fadeOut();
 });
 $('.modal__button--close').on('click', function (evt) {
@@ -169,5 +171,10 @@ $('.cart__flex--payment').click(function () {
   } else {
     $('.cart__row--payment').fadeOut();
   }
+});
+$('.cart__send').click(function (evt) {
+  evt.preventDefault();
+  $('.overlay').fadeIn();
+  $('.modal--thx').fadeIn();
 });
 //# sourceMappingURL=maps/general.js.map
